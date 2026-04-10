@@ -19,21 +19,22 @@ const cartItems = [
         quantity: 8
     }
 ];
-
-
+// sort by name...
 const sortedNames = cartItems.sort((item1 , item2) => {
     if(item1.name > item2.name) return 1;
-    if(item2.name > item1.name) return -1;
+    if(item1.name < item2.name) return -1;
 });
 console.log("Sort by names: ");
 console.log(sortedNames);
 
+// sort by price...
 const sortPrice = cartItems.sort((item1 , item2) => {
     return item1.price - item2.price;
 });
 console.log("Sorted by price")
 console.log(sortPrice);
 
+// sort by quantity...
 const sortedQuantity = cartItems.sort((item1 , item2) => {
     return item1.quantity - item2.quantity;
 });
