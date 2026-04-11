@@ -18,7 +18,7 @@ let display = (name) => {
 
 display("ladooo");
 
-// Higher order function
+// Higher order function -> a function that accepts function as a argument , or returns a function
 
 function calculator(a,b,operation){
     return operation(a,b);
