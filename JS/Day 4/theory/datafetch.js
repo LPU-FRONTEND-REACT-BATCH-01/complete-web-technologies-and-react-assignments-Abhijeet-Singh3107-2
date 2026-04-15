@@ -3,8 +3,8 @@ let parent_container = document.querySelector(".parent-container");
 
 const fetchData = async () => {
     try{
-        // const data = await fetch("https://jsonplaceholder.typicode.com/todos/33");
-        const data = await fetch("http://localhost:8082/catalog/products");
+        const data = await fetch("https://jsonplaceholder.typicode.com/todos");
+        // const data = await fetch("http://localhost:8082/catalog/products");
         console.log(data);
         if(data.ok){
             const jsonData = await data.json();
