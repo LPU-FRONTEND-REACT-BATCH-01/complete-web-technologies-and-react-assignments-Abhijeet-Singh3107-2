@@ -1,0 +1,10 @@
+type annotation
+type inference --> implicit declaration of type.
+
+functions 
+arrays 
+interfaces
+classes
+
+
+
